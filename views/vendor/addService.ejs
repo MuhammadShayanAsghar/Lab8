@@ -1,0 +1,54 @@
+<%- include ('../partials/header0') %>
+    
+    <h1 style="text-align: center">Add Service</h1>
+    <div style="width: 30%;margin: 25px auto;">
+        <form action="/vendor/addService" method="POST">
+            <div class="form-group">
+                <select  name="type" required>
+                    <option value="Decoration">Decoration</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Garden">Garden</option>
+                    <option value="Make-Up">Make-Up</option>
+                    <option value="Groom-Suit">Groom-Suit</option>
+                    <option value="Bridal-Lehengas">Bridal-Lehengas</option>
+                    <option value="Bridal-Jewellery">Bridal-Jewellery</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <select  name="city" required>
+                    <option value="Indore">Indore</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Ujjain">Ujjain</option>
+                    <option value="Dewas">Dewas</option>
+                    <option value="Ratlam">Ratlam</option>
+                    <option value="Petlawad">Petlawad</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="description" placeholder="Description" minlength="50" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="price" placeholder="Price Range" required>
+            </div>
+            <small>Upload your images at <a href="https://postimages.org/" target="_blank">PostImage</a> and paste your direct link here.
+                   <br> Choose option for website(320 * 240) and No expiration.
+            </small>
+            <div class="form-group">
+                <input class="form-control" type="text" name="image0" placeholder="Image Link" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="image1" placeholder="Image Link" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="image2" placeholder="Image Link" required/>
+            </div>
+            <p>You can upload upto 3 images</p>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Add service</button> 
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
